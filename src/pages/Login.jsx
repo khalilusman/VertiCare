@@ -62,7 +62,7 @@ export default function Login() {
           <span className={styles.logoIcon}>
             <Heart size={18} fill="currentColor" />
           </span>
-          <span className={styles.logoText}>VertigoTrack</span>
+          <span className={styles.logoText}>VertiCare</span>
         </div>
 
         <h1 className={styles.title}>Welcome back</h1>

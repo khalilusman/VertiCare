@@ -16,29 +16,29 @@ const FEATURES = [
     icon: Activity,
     title: 'Symptom Logging',
     desc: 'Track severity, duration, triggers, and medications for each vertigo episode.',
-    color: '#4BA3A3',
-    bg: 'rgba(75, 163, 163, 0.08)',
+    color: '#3D9E9E',
+    bg: 'rgba(61, 158, 158, 0.08)',
   },
   {
     icon: BookOpen,
     title: 'Personal Diary',
     desc: 'Keep a private journal to capture thoughts, patterns, and daily wellbeing.',
-    color: '#7FB3D5',
-    bg: 'rgba(127, 179, 213, 0.1)',
+    color: '#6AAED4',
+    bg: 'rgba(106, 174, 212, 0.1)',
   },
   {
     icon: LineChart,
     title: 'Health Tracker',
     desc: 'Monitor your progress over time and identify what helps you feel better.',
-    color: '#34D399',
-    bg: 'rgba(52, 211, 153, 0.1)',
+    color: '#2EBD8A',
+    bg: 'rgba(46, 189, 138, 0.1)',
   },
   {
     icon: BarChart2,
     title: 'Visual Reports',
     desc: 'Clear charts and summaries that you can share with your healthcare team.',
-    color: '#FBBF24',
-    bg: 'rgba(251, 191, 36, 0.1)',
+    color: '#F0A030',
+    bg: 'rgba(240, 160, 48, 0.1)',
   },
 ];
 
@@ -51,7 +51,7 @@ export default function Landing() {
           <span className={styles.navLogoIcon}>
             <Heart size={16} fill="currentColor" />
           </span>
-          <span className={styles.navLogoText}>VertigoTrack</span>
+          <span className={styles.navLogoText}>VertiCare</span>
         </div>
         <div className={styles.navLinks}>
           <Link to="/login">
@@ -79,7 +79,7 @@ export default function Landing() {
         </h1>
 
         <p className={styles.heroSub}>
-          VertigoTrack is a calm, easy-to-use health companion designed for
+          VertiCare is a calm, easy-to-use health companion designed for
           people living with vertigo and balance disorders. Log episodes,
           identify triggers, and share insights with your doctor.
         </p>
@@ -158,7 +158,7 @@ export default function Landing() {
       <footer className={styles.footer}>
         <div className={styles.footerLogo}>
           <Heart size={14} fill="currentColor" />
-          <span>VertigoTrack</span>
+          <span>VertiCare</span>
         </div>
         <p className={styles.footerNote}>
           This app is not a medical device and does not provide medical advice.
