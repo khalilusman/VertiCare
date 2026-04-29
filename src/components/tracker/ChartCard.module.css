@@ -1,0 +1,28 @@
+.card {}
+.title { font-size: 0.9rem; font-weight: 600; color: var(--text); margin-bottom: 3px; }
+.sub { font-size: 0.775rem; color: var(--text-muted); margin-bottom: 16px; }
+.chartWrap { width: 100%; }
+
+.empty {
+  height: 180px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.875rem; color: var(--text-light);
+  background: var(--bg-alt);
+  border-radius: var(--radius);
+  margin-top: 8px;
+  border: 1px dashed var(--border);
+}
+
+.tooltip {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  box-shadow: var(--shadow);
+  font-size: 0.8125rem;
+}
+
+.tooltipDate { color: var(--text-muted); font-size: 0.75rem; margin-bottom: 3px; }
+.tooltipVal { color: var(--text); }
+.legend { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 12px; }
+.legendItem { font-size: 0.72rem; font-weight: 600; }

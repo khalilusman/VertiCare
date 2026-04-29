@@ -1,0 +1,17 @@
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 3px 9px;
+  border-radius: 100px;
+  white-space: nowrap;
+  letter-spacing: 0.02em;
+}
+
+.default { background: var(--bg-alt); color: var(--text-muted); }
+.primary { background: rgba(61, 158, 158, 0.1); color: var(--primary-dark); }
+.success { background: var(--success-light); color: #1a7a56; }
+.warning { background: var(--warning-light); color: #8a5a10; }
+.danger { background: var(--danger-light); color: #a02020; }

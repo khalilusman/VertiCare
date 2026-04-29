@@ -1,0 +1,257 @@
+.page {
+  max-width: 680px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.header { margin-bottom: 4px; }
+
+.title {
+  font-family: var(--font-display);
+  font-size: 1.65rem;
+  font-weight: 400;
+  color: var(--text);
+}
+
+.subtitle {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+/* Card heading */
+.card {}
+
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 4px;
+}
+
+.cardSub {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+/* Info rows */
+.infoRow {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.infoRow:last-of-type { border-bottom: none; }
+
+.infoIcon {
+  color: var(--text-light);
+  margin-top: 2px;
+  flex-shrink: 0;
+}
+
+.infoLabel {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.infoVal {
+  font-size: 0.9rem;
+  color: var(--text);
+  margin-top: 2px;
+}
+
+/* Name edit */
+.nameEdit {
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid var(--border);
+}
+
+.nameRow {
+  display: flex;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.fieldLabel {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.fieldError {
+  font-size: 0.8rem;
+  color: var(--danger);
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.input {
+  flex: 1;
+  padding: 9px 12px;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.input:focus { border-color: var(--primary); }
+.inputError { border-color: var(--danger); }
+
+/* Chips */
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px 4px 12px;
+  background: rgba(75, 163, 163, 0.1);
+  color: var(--primary-dark);
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.chipRemove {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: inherit;
+  opacity: 0.6;
+  padding: 0;
+  transition: opacity 0.15s;
+}
+.chipRemove:hover { opacity: 1; }
+
+.inputRow {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* Triggers */
+.triggerGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.triggerChip {
+  padding: 6px 14px;
+  border-radius: 100px;
+  border: 1.5px solid var(--border-strong);
+  background: var(--card-bg);
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: var(--font-body);
+  transition: all 0.15s;
+}
+
+.triggerChip:hover {
+  border-color: var(--primary-light);
+  color: var(--primary-dark);
+}
+
+.triggerActive {
+  border-color: var(--primary);
+  background: rgba(75, 163, 163, 0.1);
+  color: var(--primary-dark);
+}
+
+.triggerNote {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Privacy card */
+.privacyCard {
+  background: rgba(251, 191, 36, 0.05);
+  border-color: rgba(251, 191, 36, 0.3);
+}
+
+.privacyHeader {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.privacyIcon { color: #d97706; }
+
+.privacyTitle {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.privacyText {
+  font-size: 0.8375rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Danger zone */
+.dangerCard {
+  border-color: rgba(248, 113, 113, 0.25);
+}
+
+.dangerTitle {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #991b1b;
+  margin-bottom: 14px;
+}
+
+.confirmBox {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 14px;
+  background: var(--danger-light);
+  border-radius: var(--radius);
+}
+
+.confirmText {
+  font-size: 0.875rem;
+  color: #991b1b;
+}
+
+.confirmActions {
+  display: flex;
+  gap: 8px;
+}
+
+.logoutSection {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+}

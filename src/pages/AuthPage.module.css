@@ -1,0 +1,79 @@
+.page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg);
+  padding: 20px;
+  background-image:
+    radial-gradient(ellipse at 15% 20%, rgba(61, 158, 158, 0.07) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 80%, rgba(106, 174, 212, 0.07) 0%, transparent 55%);
+}
+
+.card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-2xl);
+  padding: 40px;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: var(--shadow-lg);
+}
+
+.logo { display: flex; align-items: center; gap: 9px; margin-bottom: 28px; }
+
+.logoIcon {
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, var(--primary), var(--primary-light));
+  color: #fff;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(61, 158, 158, 0.28);
+}
+
+.logoText { font-family: var(--font-display); font-size: 1.1rem; color: var(--primary-dark); }
+.title { font-family: var(--font-display); font-size: 1.7rem; font-weight: 400; color: var(--text); margin-bottom: 6px; }
+.subtitle { font-size: 0.875rem; color: var(--text-muted); margin-bottom: 28px; }
+
+.serverError {
+  background: var(--danger-light);
+  color: #a02020;
+  border: 1px solid rgba(224, 96, 96, 0.25);
+  border-radius: var(--radius);
+  padding: 11px 14px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.form { display: flex; flex-direction: column; gap: 16px; margin-bottom: 22px; }
+
+.passwordField { position: relative; }
+.passwordInput { padding-right: 44px; }
+
+.eyeBtn {
+  position: absolute;
+  right: 12px;
+  bottom: 10px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-light);
+  transition: color 0.15s;
+  padding: 0;
+}
+.eyeBtn:hover { color: var(--text-muted); }
+
+.switch { text-align: center; font-size: 0.875rem; color: var(--text-muted); }
+.switchLink { color: var(--primary); font-weight: 600; text-underline-offset: 2px; }
+.switchLink:hover { color: var(--primary-dark); }
+
+@media (max-width: 480px) { .card { padding: 28px 20px; } }
